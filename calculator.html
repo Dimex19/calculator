@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="screen">
+            <input type="text" name="disp" id="display" value="">
+        </div>
+        <div class="buttons">
+            <div class="first">
+                <button id="num" value="" onclick="clearScreen()">CE</button>
+                <button>C</button>
+                <button id="num" onclick="deleteCharacter()">DEL</button>
+                <button id="seven" value="*" onclick="displayNumbers('*')">X</button>
+            </div>
+            <div class="first">
+                <button  id="num" value="7" onclick="displayNumbers('7')">7</button>
+                <button id="num" value="8" onclick="displayNumbers('8')">8</button>
+                <button id="num" value="9" onclick="displayNumbers('9')">9</button>
+                <button id="seven" value="/" onclick="displayNumbers('/')">/</button>
+            </div>
+            <div class="first">
+                <button id="seven" value="4" onclick="displayNumbers('4')">4</button>
+                <button id="seven" value="5" onclick="displayNumbers('5')">5</button>
+                <button id="seven" value="6" onclick="displayNumbers('6')">6</button>
+                <button id="seven" value="-" onclick="displayNumbers('-')">-</button>
+            </div>
+            <div class="first">
+                <button id="seven" value="1" onclick="displayNumbers('1')">1</button>
+                <button id="seven" value="2" onclick="displayNumbers('2')">2</button>
+                <button id="seven" value="3" onclick="displayNumbers('3')">3</button>
+                <button id="seven" value="+" onclick="displayNumbers('+')">+</button>
+            </div>
+            <div class="first">
+                <button id="seven" value="0" onclick="displayNumbers('0')">0</button>
+                <button id="seven" value="." onclick="displayNumbers('.')">.</button>
+                <button onclick="negate()">+/-</button>
+                <button onclick="evaluateDisplay()">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
